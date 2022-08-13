@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  stdout.write('Valor: ');
+  stdout.write('Informe o valor: ');
   int? value = int.tryParse(stdin.readLineSync()!);
 
   if ((value is int) && (value > 0)) {
