@@ -31,7 +31,7 @@
         });
 
         function result(value) {
-            if(!value == "" && value > 0) {
+            if(Number.isInteger(parseInt(value)) && value > 0) {
                 document.querySelector('#result').value = Array.from({length: value}, (x, i) => i)
                                                                 .filter((i) => i % 3 == 0 || i % 5 == 0)
                                                                 .reduce((a, b) => a + b);
